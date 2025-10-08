@@ -6,92 +6,126 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  /* Dark, techy background */
+  font-family: 'Fira Code', monospace; /* Techy, monospaced font - fallback is crucial */
+  background-color: #1a1a2e; /* Deep purple-blue background */
+  color: #e5e5f7; /* Light gray/off-white for text */
   line-height: 1.6;
 }
 
-/* Header */
+/* Header (The Main Banner) */
 header {
-  background: #333;
-  color: #fff;
-  padding: 2rem 0;
+  background: #0f0f23; /* Even darker shade for contrast */
+  color: #4ed9da; /* Vibrant aqua/cyan for primary accents */
+  padding: 3rem 0;
   text-align: center;
+  border-bottom: 2px solid #4ed9da; /* Sharp, accent border */
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
+  /* Subtle glow effect for a techy feel */
+  text-shadow: 0 0 5px rgba(78, 217, 218, 0.7);
 }
 
 header p {
   font-size: 1.2rem;
-  color: #ccc;
+  color: #b3b3cc; /* Subtler color for tagline */
 }
 
-/* Navigation */
+/* Navigation (The Command Line) */
 nav {
-  background: #444;
-  padding: 0.5rem;
+  background: #232345; /* Darker background for the nav bar */
+  padding: 0.75rem 0;
   text-align: center;
 }
 
 nav a {
-  color: #fff;
-  margin: 0 1rem;
+  color: #e5e5f7;
+  margin: 0 1.5rem;
   text-decoration: none;
   font-weight: bold;
+  /* Add a hover effect that looks like code highlight */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* Sections */
+nav a:hover {
+  color: #4ed9da;
+  text-decoration: none;
+  text-shadow: 0 0 3px rgba(78, 217, 218, 0.5);
+}
+
+/* Sections (The Code Blocks) */
 section {
-  padding: 2rem;
-  max-width: 900px;
+  padding: 3rem 2rem;
+  max-width: 1000px;
   margin: auto;
 }
 
 h2 {
-  margin-bottom: 1rem;
-  color: #444;
-}
-
-/* Projects */
-.project {
-  background: #fff;
-  padding: 1rem;
   margin-bottom: 1.5rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  color: #4ed9da; /* Accent color for headings */
+  border-bottom: 1px dashed #232345; /* Subtle separation line */
+  padding-bottom: 0.5rem;
 }
 
-/* Footer */
+/* Projects (The Components) */
+.project {
+  background: #2a2a4a; /* Darker, contrasting card background */
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 5px solid #ff4b8e; /* Pop of neon-pink accent border */
+  border-radius: 2px; /* Sharper corners for a modern, techy look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 15px rgba(78, 217, 218, 0.2); /* Subtle hover glow */
+}
+
+.project h3 {
+    color: #ff4b8e; /* Neon pink for project titles */
+    margin-bottom: 0.5rem;
+}
+
+/* Footer (The Terminal Status) */
 footer {
-  background: #333;
-  color: #fff;
+  background: #0f0f23;
+  color: #b3b3cc;
   text-align: center;
-  padding: 2rem;
-  margin-top: 2rem;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  border-top: 1px solid #232345;
+  font-size: 0.9rem;
 }
 
-/* Contact Links */
+/* Contact Links (The Pointers) */
 section a {
-  color: #007acc;
+  color: #ff4b8e; /* Neon pink for primary links */
   text-decoration: none;
+  font-weight: bold;
 }
 
 section a:hover {
   text-decoration: underline;
+  color: #4ed9da; /* Change link color on hover to secondary accent */
 }
 
 /* Mobile Styles */
-@media (max-width: 600px) {
+@media (max-width: 768px) { /* Adjusted breakpoint for slightly larger mobile screens */
   header h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   nav a {
     display: block;
-    margin: 0.5rem 0;
+    margin: 0.75rem 0;
+  }
+
+  section {
+      padding: 1.5rem 1rem;
   }
 }
