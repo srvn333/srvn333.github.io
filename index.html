@@ -482,7 +482,7 @@
         </div>
 
         <footer>
-            <p>2025 Sravan Sushil</p>
+            <p id="footer-text">2025 Sravan Sushil</p>
         </footer>
     </div>
 
@@ -547,18 +547,18 @@
             const splash = document.getElementById('splash-screen');
             const main = document.getElementById('main-content');
             
-            // 1. Start fading out the splash screen
-            splash.style.opacity = '0';
+            // 1. Immediately make main content visible and start fading out splash
+            main.style.visibility = 'visible';
+            main.style.opacity = '1';
+            splash.style.opacity = '0'; // Starts CSS transition
 
-            // 2. After transition, hide splash and show main content
+            // 2. Animate skill bars (they are now visible)
+            animateSkillBars();
+            
+            // 3. Hide splash screen element from flow after the fade transition completes
             setTimeout(() => {
                 splash.style.display = 'none';
-                main.style.visibility = 'visible';
-                main.style.opacity = '1';
-                
-                // Animate skill bars immediately after content is visible
-                animateSkillBars();
-            }, 500); // Match CSS transition time
+            }, 500); // 500ms matches the CSS transition time
         }
 
         /**
@@ -668,3 +668,18 @@
         }
 
         // Initialize thumbnails and skills on page load
+        window.onload = () => {
+            renderThumbnails();
+            renderSkills();
+            // Dynamic footer year update for robustness
+            const footerElement = document.getElementById('footer-text');
+            if (footerElement) {
+                const currentYear = new Date().getFullYear();
+                footerElement.textContent = `${currentYear} Sravan Sushil`;
+            }
+        };
+        
+    </script>
+
+</body>
+</html>
