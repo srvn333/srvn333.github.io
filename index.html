@@ -285,19 +285,21 @@
 
         /* CONTACT SECTION */
         #contact-details {
-            padding: 60px 0;
+            /* REDUCED PADDING: 40px -> 25px */
+            padding: 25px 0; 
             text-align: center;
         }
         #contact-details h2 {
             color: var(--accent-color);
-            margin-bottom: 30px;
+            margin-bottom: 20px; /* Reduced margin */
         }
         #contact-details a {
             color: var(--main-text);
             text-decoration: none;
+            /* REDUCED MARGIN: 10px -> 5px */
             display: block;
-            margin: 15px 0;
-            font-size: 1.2em;
+            margin: 5px 0; 
+            font-size: 1.1em; 
             transition: color 0.3s;
         }
         #contact-details a:hover {
@@ -470,12 +472,17 @@
                         <span class="label">Phone</span>
                         <a href="tel:+919188709311">+919188709311</a>
                     </div>
+                    <!-- NEW: LinkedIn Profile Added -->
+                    <div class="contact-item">
+                        <span class="label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/sravan-sushil-a63995300/" target="_blank">Sravan Sushil Profile</a>
+                    </div>
                 </div>
             </section>
         </div>
 
         <footer>
-            <p>SYSTEM STATUS: **CONNECTED** | Built with SwiftUI Philosophy | &copy; 2024 Sravan Sushil</p>
+            <p>2025 Sravan Sushil</p>
         </footer>
     </div>
 
@@ -661,12 +668,3 @@
         }
 
         // Initialize thumbnails and skills on page load
-        window.onload = () => {
-            renderThumbnails();
-            renderSkills();
-        };
-        
-    </script>
-
-</body>
-</html>
