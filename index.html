@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sravan Sushil // Game Dev & Tech Art Portfolio</title>
     
-    <!-- UPDATED: Importing Rajdhani (UI) and IBM Plex Mono (Code/Tech) -->
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
         /* === CSS STYLES === */
         :root {
-            --bg-color: #0c0c16;      /* Deep Midnight Blue */
+            --bg-color: #0c0c16;      /* Deep Midnight Blue */
             --main-text: #f0f0f5;
-            --accent-color: #00ccff;  /* Electric Cyan (SwiftUI Blue-like) */
+            --accent-color: #00ccff;  /* Electric Cyan (SwiftUI Blue-like) */
             --sub-text: #a0a0b0;
-            --glass-background: rgba(25, 25, 40, 0.4); 
+            --glass-background: rgba(25, 25, 40, 0.4); 
             --glass-border: rgba(0, 204, 255, 0.3);
-            --font-code: 'IBM Plex Mono', monospace; 
-            --font-ui: 'Rajdhani', sans-serif;       
+            --font-code: 'IBM Plex Mono', monospace; 
+            --font-ui: 'Rajdhani', sans-serif;       
             --blur-radius: 8px;
         }
 
@@ -47,7 +46,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            z-index: 2000; 
+            z-index: 2000; 
             font-family: var(--font-code);
             transition: opacity 0.5s ease-out;
         }
@@ -102,9 +101,9 @@
         .swiftui-card {
             background-color: var(--glass-background);
             border: 1px solid var(--glass-border);
-            backdrop-filter: blur(var(--blur-radius)); 
+            backdrop-filter: blur(var(--blur-radius)); 
             -webkit-backdrop-filter: blur(var(--blur-radius));
-            border-radius: 14px; 
+            border-radius: 14px; 
             padding: 30px;
             margin-bottom: 30px;
             transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -123,8 +122,8 @@
             position: sticky;
             top: 0;
             z-index: 10;
-            background-color: rgba(12, 12, 22, 0.8); 
-            backdrop-filter: blur(10px); 
+            background-color: rgba(12, 12, 22, 0.8); 
+            backdrop-filter: blur(10px); 
             border-bottom: 1px solid var(--glass-border);
         }
         .logo {
@@ -147,8 +146,8 @@
         }
         /* UPDATED: Highlighted Roles Style */
         .hero h2 {
-            font-size: clamp(1.1em, 2.5vw, 1.5em); 
-            color: var(--accent-color); 
+            font-size: clamp(1.1em, 2.5vw, 1.5em); 
+            color: var(--accent-color); 
             font-weight: 700;
             margin-bottom: 40px;
             padding: 10px 0;
@@ -156,7 +155,7 @@
             border-top: 1px solid var(--glass-border);
             border-bottom: 1px solid var(--glass-border);
             text-shadow: 0 0 8px rgba(0, 204, 255, 0.5); /* Subtle glow */
-            font-family: var(--font-code); 
+            font-family: var(--font-code); 
         }
 
         .hero p {
@@ -286,7 +285,7 @@
         /* CONTACT SECTION */
         #contact-details {
             /* REDUCED PADDING: 40px -> 25px */
-            padding: 25px 0; 
+            padding: 25px 0; 
             text-align: center;
         }
         #contact-details h2 {
@@ -298,8 +297,8 @@
             text-decoration: none;
             /* REDUCED MARGIN: 10px -> 5px */
             display: block;
-            margin: 5px 0; 
-            font-size: 1.1em; 
+            margin: 5px 0; 
+            font-size: 1.1em; 
             transition: color 0.3s;
         }
         #contact-details a:hover {
@@ -368,7 +367,7 @@
         .video-container {
             width: 100%;
             /* 16:9 aspect ratio */
-            padding-bottom: 56.25%; 
+            padding-bottom: 56.25%; 
             position: relative;
             background-color: #000;
             border-bottom: 1px solid var(--glass-border);
@@ -401,32 +400,26 @@
 </head>
 <body>
 
-    <!-- 1. SPLASH SCREEN: The initial view -->
     <div id="splash-screen">
         <div class="terminal-output">
-           ENTERING SRAVAN'S DATABASE...
+            ENTERING SRAVAN'S DATABASE...
         </div>
         <button id="start-button" onclick="startPortfolio()">
             PRESS START
         </button>
     </div>
 
-    <!-- 2. MAIN CONTENT WRAPPER: Initially hidden, shown after splash screen -->
     <div id="main-content" style="opacity: 0; visibility: hidden; transition: opacity 0.5s;">
         <header>
             <div class="logo">SRAVAN SUSHIL</div>
             <nav>
-                <!-- Navigation links are handled by buttons -->
-            </nav>
+                </nav>
         </header>
 
         <div class="container">
-            <!-- HERO SECTION -->
             <section id="hero" class="hero">
                 <h1>SRAVAN SUSHIL</h1>
-                <!-- UPDATED: Highlighted Roles -->
                 <h2>GAME DEVELOPER | DESIGNER | SOUND DESIGNER | TECHNICAL ARTIST</h2>
-                <!-- REVERTED DESCRIPTION -->
                 <p>
                     I’m a game developer, designer, technical artist and sound designer/composer passionate about crafting emotionally resonant and immersive experiences that bridge art, sound, and interactivity. With hands-on experience in XR (Extended Reality) development, I specialize in blending gameplay, narrative, and technology to build worlds that feel both meaningful and innovative. My work often explores ritual, culture, and sound as integral parts of gameplay, supported by strong skills in real-time rendering, visual scripting, and interactive design.
                 </p>
@@ -437,30 +430,26 @@
                 </div>
             </section>
             
-            <!-- 3. SKILLS SECTION (MOVED UP) -->
             <section id="skills-matrix" style="margin-top: 60px;">
                 <h2 style="font-family: var(--font-code);">// SKILL_MATRIX::CORE_CAPACITY</h2>
                 <div class="swiftui-card">
                     <div class="skill-list" id="skill-container">
-                        <!-- Skills will be injected here by JavaScript -->
-                    </div>
+                        </div>
                 </div>
             </section>
 
-            <!-- 4. WORKS SECTION (MOVED DOWN) -->
             <section id="projects" style="margin-top: 60px;">
-                <h2 id="projects-title" style="color: var(--accent-color); margin-bottom: 30px; font-family: var(--font-code);">// PROJECTS: WORK_LOG</h2>
+                <h2 id="projects-title" style="color: var(--accent-color); margin-bottom: 30px; font-family: var(--font-code);">// PROJECTS: WORK_LOG 
+                </h2>
                 
                 <div class="project-grid" id="project-thumbnails">
-                    <!-- Thumbnails will be injected here by JavaScript -->
-                </div>
+                    </div>
                 
                 <button class="action-button secondary" onclick="hideWorks()" style="margin-top: 30px;">
                     <span style="font-family: sans-serif;">&larr;</span> Back to Top
                 </button>
             </section>
 
-            <!-- CONTACT SECTION -->
             <section id="contact-details" class="swiftui-card" style="margin-top: 60px;">
                 <h2 style="font-family: var(--font-code);">// CONTACT</h2>
                 <div class="contact-info">
@@ -472,7 +461,6 @@
                         <span class="label">Phone</span>
                         <a href="tel:+919188709311">+919188709311</a>
                     </div>
-                    <!-- NEW: LinkedIn Profile Added -->
                     <div class="contact-item">
                         <span class="label">LinkedIn</span>
                         <a href="https://www.linkedin.com/in/sravan-sushil-a63995300/" target="_blank">Sravan Sushil Profile</a>
@@ -486,14 +474,12 @@
         </footer>
     </div>
 
-    <!-- PROJECT VIEWER MODAL (Outside main-content for Z-index) -->
     <div id="projectModal" class="modal-overlay">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal()">&times;</button>
             
             <div id="modalVideo" class="video-container">
-                <!-- YouTube iframe will be loaded here -->
-            </div>
+                </div>
             
             <div class="modal-body">
                 <h3 id="modalTitle" style="color: var(--accent-color); margin-top: 0; font-size: 1.8em;"></h3>
@@ -509,16 +495,25 @@
         
         // Data structure for projects
         const projectsData = [
-            // PROJECT 1: Bubble Worlds 3D/VR
+            // NEW PROJECT 1: Cartel Rush (Added at the start)
+            {
+                id: 'cartel-rush',
+                title: 'Cartel Rush',
+                roles: 'Developer, Designer, Technical Artist, Sound Designer',
+                description: 'Two wheels, one story. In this split-screen co-op adventure, every mission becomes a shared memory — from reckless chases to quiet drives under city lights. Ride together, race the odds, and write your own road-movie where loyalty is the only fuel.',
+                thumbnailUrl: 'https://placehold.co/400x225/ffc300/0c0c16?text=CARTEL+RUSH',
+                youtubeEmbedUrl: 'https://www.youtube.com/embed/f2hu7qIVpZQ?autoplay=1&rel=0&modestbranding=1', 
+            },
+            // ORIGINAL PROJECT 2: Bubble Worlds 3D/VR
             {
                 id: 'bubble-worlds-vr',
                 title: 'Bubble Worlds 3D/VR',
                 roles: 'Developer, Designer, Technical Artist (Unity), Audio Composer',
                 description: 'Step into a fragile world suspended in time — a shimmering bubble that breathes, expands, and begins to collapse around you. Your only hope: find the hidden key that unlocks your way to safety before the world itself closes in. Every second counts as the environment folds and fades, bending your sense of space and scale. Designed for both desktop and VR, Within the Bubble immerses players in a surreal race against time — where perception, precision, and panic collide inside a world that’s slowly disappearing.',
                 thumbnailUrl: 'https://placehold.co/400x225/00ccff/0c0c16?text=BUBBLE+WORLDS',
-                youtubeEmbedUrl: 'https://www.youtube.com/embed/E-qltkGs--0?autoplay=1&rel=0&modestbranding=1', 
+                youtubeEmbedUrl: 'https://www.youtube.com/embed/E-qltkGs--0?autoplay=1&rel=0&modestbranding=1', 
             },
-            // UPDATED PROJECT 2: Eternal Shift
+            // UPDATED PROJECT 3: Eternal Shift
             {
                 id: 'eternal-shift',
                 title: 'Eternal Shift',
@@ -526,7 +521,7 @@
                 description: 'Run through the ever-shifting corridors of fate — where every orb you collect reshapes your destiny. In Eternal Shift, time never stops, but your soul’s balance does. Each choice feeds the Curse Meter, tipping you toward light or darkness. Will you ascend into serene eternity or spiral into the chaos below? Every run is a test of instinct, rhythm, and redemption in this endless journey between Heaven and Hell.',
                 thumbnailUrl: 'https://placehold.co/400x225/ff00ff/0c0c16?text=ETERNAL+SHIFT',
                 // *** UPDATED YOUTUBE LINK HERE ***
-                youtubeEmbedUrl: 'https://www.youtube.com/embed/bJ51FIWyf8M?autoplay=1&rel=0&modestbranding=1', 
+                youtubeEmbedUrl: 'https://www.youtube.com/embed/bJ51FIWyf8M?autoplay=1&rel=0&modestbranding=1', 
             }
         ];
 
@@ -641,10 +636,10 @@
 
             // Load YouTube Video Embed with autoplay
             const videoHtml = `
-                <iframe 
-                    src="${project.youtubeEmbedUrl}" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                <iframe 
+                    src="${project.youtubeEmbedUrl}" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
                 </iframe>
             `;
@@ -675,7 +670,7 @@
             const footerElement = document.getElementById('footer-text');
             if (footerElement) {
                 const currentYear = new Date().getFullYear();
-                footerElement.textContent = `${currentYear} Sravan Sushil`;
+                footerElement.textContent = `© ${currentYear} Sravan Sushil`;
             }
         };
         
@@ -683,6 +678,3 @@
 
 </body>
 </html>
-
-
-
